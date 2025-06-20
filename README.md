@@ -1,6 +1,8 @@
 # ⏰ FIX-IT Hackclub Userscript
 
 A simple JavaScript userscript that declutters the Roblox Homepage
+I created this userscript with the intention of using it for the Hackclub FIX-IT event,
+but it took me too long so I can't submit it there anymore.
 
 ---
 
