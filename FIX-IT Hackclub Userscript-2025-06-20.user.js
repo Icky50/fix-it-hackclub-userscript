@@ -2,7 +2,7 @@
 // @name         FIX-IT Hackclub Userscript
 // @namespace    http://tampermonkey.net/
 // @version      2025-06-20
-// @description  A useful userscript that declutters the Roblox homepage
+// @description  A useful userscript that declutters the Roblox homepage. I originally created this with the intention of participation in the FIX-IT Hackclub event, but it took me a while to finish it.
 // @author       Hannes
 // @match        https://www.roblox.com/home
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
@@ -30,6 +30,16 @@
         }
     });
     HomeHeaderObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Remove the "Add Friends" button
+    const AddFriendsObserver = new MutationObserver(() => {
+        const addFriendsButton = document.querySelector('.friends-carousel-list-container > div:nth-child(1)');
+        if (addFriendsButton) {
+            addFriendsButton.remove();
+            AddFriendsObserver.disconnect();
+        }
+    });
+    AddFriendsObserver.observe(document.body, { childList: true, subtree: true });
 
     // Remove the "Today's Picks" section
     const TodaySPicksObserver = new MutationObserver(() => {
