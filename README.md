@@ -17,7 +17,7 @@ but it took me too long so I can't submit it there anymore.
 ## 🚀 Getting Started
 
 1) Install a browser-extension that runs and manages userscripts. Example: [Tampermonkey](https://www.tampermonkey.net/)
-2) Import the userscript. TODO: Greasefork upload and explanation
+2) Import the userscript. You should use the uploaded version at [Greasy Fork](https://greasyfork.org/en/scripts/540261-fix-it-hackclub-userscript).
 3) enable the userscript and enjoy
 
 ---

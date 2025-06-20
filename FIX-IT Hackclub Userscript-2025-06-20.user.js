@@ -7,6 +7,7 @@
 // @match        https://www.roblox.com/home
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function() {
