@@ -1,12 +1,14 @@
 # ⏰ FIX-IT Hackclub Userscript
 
-A simple JavaScript userscript to help you.
+A simple JavaScript userscript that declutters the Roblox Homepage
 
 ---
 
 ## ✨ Features
 
-- 😶 I don't know yet what this userscript will do
+- ❎ Remove the "Today's Picks" section
+- ❎ Remove the "Sponsored" section
+- ❎ Remove the first "Recommended for You" section, you only need one of them
 
 ---
 
@@ -37,7 +39,11 @@ I used generative AI in the form of LLMs to help me with this project.
 
 ## 📸 Screenshots
 
-![Feature_1](./screenshots/feature_1.png)
+### Before
+![before_screenshot](./screenshots/before_screenshot.png)
+
+### After
+![after_screenshot](./screenshots/after_screenshot.png)
 
 ---
 
