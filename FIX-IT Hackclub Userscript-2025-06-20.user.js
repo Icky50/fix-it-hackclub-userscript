@@ -42,4 +42,25 @@
         }
     });
     RecommendedObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Moving the "Favorites" section to the top, right after the "Continue" section
+    const FavoritesObserver = new MutationObserver(() => {
+        const favoritesSection = document.querySelector('div.game-sort-carousel-wrapper:nth-child(5)');
+        const continueSection = document.querySelector('div.game-sort-carousel-wrapper:nth-child(2)');
+        if (favoritesSection && continueSection) {
+            continueSection.insertAdjacentElement('afterend', favoritesSection);
+            FavoritesObserver.disconnect();
+        }
+    });
+    FavoritesObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Remove empty space after the now moved "Favorites" section
+    const EmptySpaceObserver = new MutationObserver(() => {
+        const emptySpace = document.querySelector('.sdui-feed-item-container');
+        if (emptySpace) {
+            emptySpace.remove();
+            EmptySpaceObserver.disconnect();
+        }
+    });
+    EmptySpaceObserver.observe(document.body, { childList: true, subtree: true });
 })();
